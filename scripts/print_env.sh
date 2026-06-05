@@ -1,3 +1,4 @@
-#!/usr/bin/env
+#!/bin/sh -eux
 
 env > "$HOME"/environment.txt
+whoami

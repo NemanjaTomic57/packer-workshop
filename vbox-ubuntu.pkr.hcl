@@ -28,6 +28,7 @@ build {
   sources = ["sources.virtualbox-iso.ubuntu"]
 
   provisioner "shell" {
-    scripts = ["${path.root}/scripts/print_env.sh"]
+    pause_before = "10s"
+    scripts      = ["${path.root}/scripts/print_env.sh"]
   }
 }
