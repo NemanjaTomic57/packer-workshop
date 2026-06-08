@@ -11,39 +11,28 @@ HCL ist ein großer Bestandteil im Geschäft der Cloud. HCL wird nicht nur in Pa
 ### Tag 1
 
 1. Was sind virtuelle Maschinen?
-
 2. Wozu werden virtuelle Maschinen gebraucht?
-
-3. Wie werden virtuelle Maschinen bereitgestellt?
-
+3. Was ist ein golden Image?
 4. Infrastructure as Code
-
 5. Einfuhrung in HashiCorp Packer
 
 Lab: Eine virtuelle Maschine mit Packer installieren.
 
 ### Tag 2
 
-1. HashiCorp Configuration Language (variables, locals, functions)
-
+1. HashiCorp Configuration Language
 2. Packer Dateien und Verzeichnisse
-
 3. Struktur eines Packer Projektes (source, build)
-
 4. Konfiguration von cloud-init
-
 5. Packer boot_command und http_directory
 
 Lab: Vollautomatisierte Installation einer VM auf Ubuntu
 
 ### Tag 3
 
-1. Was ist ein golden Image?
-
+1. Wie wird Packer in Projekten angewendet?
 2. Fur welche Umgebungen kann Packer genutzt werden?
-
 3. Shell Provisionierung in Packer
-
 4. Packer Post-Prozessoren
 
 Lab: Systemupdate & Installation der GuestTools
