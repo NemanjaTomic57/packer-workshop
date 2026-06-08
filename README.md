@@ -6,6 +6,30 @@ Der Workshop findet an drei aneinanderfolgenden Tagen a 60 Minuten statt. Jeder 
 
 HCL ist ein großer Bestandteil im Geschäft der Cloud. HCL wird nicht nur in Packer verwendet, sondern im Großteil des Ökosystems von HashiCorp, inklusive Terraform. Wer HCL schreiben und lesen kann, hat in der heutigen Zeit der Cloud enorme Vorteile.
 
+## Vorraussetzungen
+
+Fur die Labs des Workshops werden einige Vorraussetzungen benotigt. Um einen schnellen Einstieg zu gewahrleisten, bitte ich euch, diese Vorraussetzungen schon vor Beginn des Workshops zu erfullen. Falls es Probleme geben sollte, konnt ihr euch gerne an mich wenden.
+
+### Benotigte Software
+
+- Linux Betriebssystem
+- Packer [installieren](https://developer.hashicorp.com/packer/install)
+- VirtualBox [installieren](https://www.virtualbox.org/wiki/Linux_Downloads)
+- Git [installieren](https://git-scm.com/install/linux)
+- VS Code [installieren](https://code.visualstudio.com/download) (oder praferierten Code Editor)
+
+### Mindestanfoderungen an die Hardware
+
+- 4 CPU-Kerne
+- 8 GB RAM
+- Mindestens 80 GB freien Festplattenspeicher
+
+### Ausserdem
+
+- SSH-Grundkenntnisse
+- Grundlegende Linux-Kentnisse
+- Klonen des [GitHub Projektes](https://github.com/NemanjaTomic57/packer-workshop)
+
 ## Agenda
 
 ### Tag 1
