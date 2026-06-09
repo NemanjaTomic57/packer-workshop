@@ -30,6 +30,10 @@ Fur die Labs des Workshops werden einige Vorraussetzungen benotigt. Um einen sch
 - Grundlegende Linux-Kentnisse
 - Klonen des [GitHub Projektes](https://github.com/NemanjaTomic57/packer-workshop)
 
+```bash
+git clone https://github.com/NemanjaTomic57/packer-workshop.git
+```
+
 ## Agenda
 
 ### Tag 1
