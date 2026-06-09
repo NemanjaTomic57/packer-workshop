@@ -26,8 +26,7 @@ Fur die Labs des Workshops werden einige Vorraussetzungen benotigt. Um einen sch
 
 ### Ausserdem
 
-- SSH-Grundkenntnisse
-- Grundlegende Linux-Kentnisse
+- Linux-Grundkentnisse
 - Klonen des [GitHub Projektes](https://github.com/NemanjaTomic57/packer-workshop)
 
 ```bash
@@ -38,13 +37,12 @@ git clone https://github.com/NemanjaTomic57/packer-workshop.git
 
 ### Tag 1
 
-1. Was sind virtuelle Maschinen?
-2. Wozu werden virtuelle Maschinen gebraucht?
-3. Was ist ein golden Image?
-4. Infrastructure as Code
-5. Einfuhrung in HashiCorp Packer
+1. Einführung in virtuelle Maschinen
+2. Virtuelle Maschinen vs. Golden Images
+3. Infrastructure as Code
+4. HashiCorp Packer Installation durchführen
 
-Lab: Eine virtuelle Maschine mit Packer installieren.
+Lab: Eine virtuelle Maschine mit Packer installieren und anschließend klonen
 
 ### Tag 2
 
