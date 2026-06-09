@@ -56,10 +56,10 @@ Lab: Vollautomatisierte Installation einer VM auf Ubuntu
 
 ### Tag 3
 
-1. Wie wird Packer in Projekten angewendet?
-2. Fur welche Umgebungen kann Packer genutzt werden?
-3. Shell Provisionierung in Packer
-4. Packer Post-Prozessoren
+1. Provisionierung mit Shell Skripten
+2. Warum sollte ich Packer lernen und anwenden?
+3. Fur welche Umgebungen kann Packer genutzt werden?
+4. Packer Post-Prozessor für Vagrant
 
 Lab: Systemupdate & Installation der GuestTools
 
