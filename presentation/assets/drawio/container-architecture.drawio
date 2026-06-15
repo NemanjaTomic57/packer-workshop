@@ -1,0 +1,47 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Containers" id="0">
+    <mxGraphModel dx="783" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="containerbox" value="Container Architektur" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="170" width="420" height="300" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c1" value="Container 1" style="swimlane;html=1;" vertex="1" parent="containerbox">
+          <mxGeometry x="20" y="30" width="120" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c1app" value="App" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="c1">
+          <mxGeometry x="20" y="50" width="80" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c2" value="Container 2" style="swimlane;html=1;" vertex="1" parent="containerbox">
+          <mxGeometry x="150" y="30" width="120" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2app" value="App" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="c2">
+          <mxGeometry x="20" y="50" width="80" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c3" value="Container 3" style="swimlane;html=1;" vertex="1" parent="containerbox">
+          <mxGeometry x="280" y="30" width="120" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3app" value="App" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="c3">
+          <mxGeometry x="20" y="50" width="80" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="runtime" value="Container Runtime (Docker / containerd)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="containerbox">
+          <mxGeometry x="10" y="150" width="400" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="hostos" value="Host Betriebssystem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="containerbox">
+          <mxGeometry x="10" y="200" width="400" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="hardware" value="Host Hardware" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="containerbox">
+          <mxGeometry x="10" y="250" width="400" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -17,6 +17,7 @@ Fur die Labs des Workshops werden einige Vorraussetzungen benotigt. Um einen sch
 - VirtualBox [installieren](https://www.virtualbox.org/wiki/Linux_Downloads)
 - Git [installieren](https://git-scm.com/install/linux)
 - VS Code [installieren](https://code.visualstudio.com/download) (oder praferierten Code Editor)
+- HashiCorp Configuration Language (HCL) Extention - https://marketplace.visualstudio.com/items?itemName=HashiCorp.HCL
 
 ### Mindestanfoderungen an die Hardware
 
@@ -42,7 +43,13 @@ git clone https://github.com/NemanjaTomic57/packer-workshop.git
 3. Infrastructure as Code
 4. Einführung in HashiCorp Packer
 
-Lab: Eine virtuelle Maschine mit Packer installieren und anschließend klonen
+#### Lab
+
+Eine virtuelle Maschine mit Packer installieren und anschließend klonen. Die Aufgabe dabei ist es, die Installation der VM manuell auszufuhren.
+
+#### Dokumentation
+
+- https://aws.amazon.com/compare/the-difference-between-type-1-and-type-2-hypervisors/
 
 ### Tag 2
 
@@ -52,7 +59,15 @@ Lab: Eine virtuelle Maschine mit Packer installieren und anschließend klonen
 4. Konfiguration von cloud-init
 5. Packer boot_command und http_directory
 
-Lab: Vollautomatisierte Installation einer VM auf Ubuntu
+#### Lab
+
+Vollautomatisierte Installation einer VM auf Ubuntu mit zwei sources. Cloud-init wird bereitgestellt. Aufgabe ist es, die Variablen fur die sources mit locals zu ersetzen.
+
+#### Dokumentation
+
+- https://developer.hashicorp.com/packer/docs/templates/hcl_templates/path-variables
+- https://developer.hashicorp.com/packer/docs/templates/hcl_templates/functions
+    - Nicht jede Funktion verstehen, aber zumindest die Namen jeder Funktion lesen. Das reicht schon.
 
 ### Tag 3
 
