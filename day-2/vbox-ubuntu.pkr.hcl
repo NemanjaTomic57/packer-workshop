@@ -24,6 +24,8 @@ source "virtualbox-iso" "ubuntu" {
   boot_command   = ["<wait>e<wait><down><down><down><end> autoinstall ds=nocloud-net\\;s=http://{{.HTTPIP}}:{{.HTTPPort}}/<wait><f10><wait>"]
 }
 
+# TODO: Create another source for LAB 2
+
 build {
   sources = ["sources.virtualbox-iso.ubuntu"]
 
@@ -32,3 +34,26 @@ build {
     scripts      = ["${path.root}/scripts/print_env.sh"]
   }
 }
+
+
+
+local "mylocal" {
+  expression = "${var.secret_api_key}"
+  sensitive  = true
+}
+
+locals {
+  instance_ids = "${concat(aws_instance.blue.*.id, aws_instance.green.*.id)}"
+}
+
+locals {
+  default_name_prefix = "${var.project_name}-web"
+  name_prefix         = "${var.name_prefix != "" ? var.name_prefix : local.default_name_prefix}"
+}
+
+source "virtualbox-iso" "example" {
+  output = "${local.name_prefix}-files"
+  # ...
+}
+
+

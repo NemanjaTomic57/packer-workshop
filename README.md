@@ -40,7 +40,7 @@ git clone https://github.com/NemanjaTomic57/packer-workshop.git
 1. Einführung in virtuelle Maschinen
 2. Virtuelle Maschinen vs. Golden Images
 3. Infrastructure as Code
-4. HashiCorp Packer Installation durchführen
+4. Einführung in HashiCorp Packer
 
 Lab: Eine virtuelle Maschine mit Packer installieren und anschließend klonen
 
