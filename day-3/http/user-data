@@ -1,0 +1,10 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: virtualbox
+    username: ntomic
+    password: '$6$5eDuFxBBXVv.5kzf$K0YTuH3zvbKJ9eRzykh3g9.9boZXMdInqzFLeMEBW4Li9/z7zOqReLPAoD719IxVEiHUB1oKDrQcSwCGZtxCv0'
+  ssh:
+    install-server: yes
+    allow-pw: yes

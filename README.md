@@ -71,10 +71,10 @@ Vollautomatisierte Installation einer VM auf Ubuntu mit zwei sources. Cloud-init
 
 ### Tag 3
 
-1. Provisionierung mit Shell Skripten
-2. Warum sollte ich Packer lernen und anwenden?
-3. Fur welche Umgebungen kann Packer genutzt werden?
-4. Packer Post-Prozessor für Vagrant
+1. Warum sollte ich Packer lernen und anwenden?
+2. Fur welche Umgebungen kann Packer genutzt werden?
+3. Provisionierung mit Shell Skripten
+4. Installation der GuestTools
 
 Lab: Systemupdate & Installation der GuestTools
 
