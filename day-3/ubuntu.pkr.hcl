@@ -12,14 +12,13 @@ packer {
 }
 
 locals {
-  iso_url      = "https://releases.ubuntu.com/resolute/ubuntu-26.04-live-server-amd64.iso"
-  iso_checksum = "file:https://releases.ubuntu.com/resolute/SHA256SUMS"
+  iso_url = "https://releases.ubuntu.com/resolute/ubuntu-26.04-live-server-amd64.iso"
 }
 
 source "virtualbox-iso" "ubuntu" {
   # LAB 1
   iso_url      = local.iso_url
-  iso_checksum = local.iso_checksum
+  iso_checksum = "file:https://releases.ubuntu.com/resolute/SHA256SUMS"
 
   cpus      = 4
   memory    = 16384
@@ -66,10 +65,7 @@ source "qemu" "ubuntu" {
 }
 
 build {
-  sources = [
-    "sources.virtualbox-iso.ubuntu",
-    # "sources.qemu.ubuntu"
-  ]
+  sources = ["sources.virtualbox-iso.ubuntu"]
 
   provisioner "shell" {
     pause_before = "10s"
@@ -81,3 +77,6 @@ build {
     scripts         = ["${path.root}/scripts/print_env.sh"]
   }
 }
+
+
+
