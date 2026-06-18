@@ -13,6 +13,15 @@ packer {
 
 locals {
   iso_url = "https://releases.ubuntu.com/resolute/ubuntu-26.04-live-server-amd64.iso"
+
+  execute_command = "echo 'password' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'"
+
+  environment_variables = {
+    FOO      = "BAR"
+    HELLO    = "WORLD"
+    HOME_DIR = "/home/ntomic"
+  }
+
 }
 
 source "virtualbox-iso" "ubuntu" {
@@ -65,18 +74,27 @@ source "qemu" "ubuntu" {
 }
 
 build {
-  sources = ["sources.virtualbox-iso.ubuntu"]
+  sources = [
+    "sources.virtualbox-iso.ubuntu",
+    # "sources.qemu.ubuntu"
+  ]
 
+  # Linux Shell scripts
+  # Install updates + guest tools and reboot
+  provisioner "shell" {
+    execute_command   = local.execute_command
+    pause_before      = "10s"
+    expect_disconnect = true
+    env               = local.environment_variables
+    scripts = [
+      "${path.root}/scripts/update_packages.sh",
+      "${path.root}/scripts/guest_tools_virtualbox.sh"
+    ]
+  }
+  # Print environment variables
   provisioner "shell" {
     pause_before = "10s"
-    env = {
-      FOO   = "BAR"
-      HELLO = "WORLD"
-    }
-    execute_command = "echo 'password' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'"
-    scripts         = ["${path.root}/scripts/print_env.sh"]
+    env          = local.environment_variables
+    scripts      = ["${path.root}/scripts/print_env.sh"]
   }
 }
-
-
-
