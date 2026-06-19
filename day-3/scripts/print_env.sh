@@ -1,6 +1,7 @@
+
 #!/bin/sh -eux
 
 env
-whoami
+env > "$HOME_DIR"/environment.txt
 
-env > "$HOME"/environment.txt
+

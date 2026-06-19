@@ -81,20 +81,26 @@ build {
 
   # Linux Shell scripts
   # Install updates + guest tools and reboot
-  provisioner "shell" {
-    execute_command   = local.execute_command
-    pause_before      = "10s"
-    expect_disconnect = true
-    env               = local.environment_variables
-    scripts = [
-      "${path.root}/scripts/update_packages.sh",
-      "${path.root}/scripts/guest_tools_virtualbox.sh"
-    ]
-  }
+  # provisioner "shell" {
+  #   execute_command   = local.execute_command
+  #   pause_before      = "10s"
+  #   expect_disconnect = true
+  #   env               = local.environment_variables
+  #   scripts = [
+  #     "${path.root}/scripts/update_packages.sh",
+  #     "${path.root}/scripts/guest_tools_virtualbox.sh"
+  #   ]
+  # }
+
   # Print environment variables
   provisioner "shell" {
-    pause_before = "10s"
-    env          = local.environment_variables
-    scripts      = ["${path.root}/scripts/print_env.sh"]
+    execute_command = "echo 'password' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'"
+    pause_before    = "10s"
+    env = {
+      FOO      = "BAR"
+      HELLO    = "WORLD"
+      HOME_DIR = "/home/ntomic"
+    }
+    scripts = ["${path.root}/scripts/print_env.sh"]
   }
 }
